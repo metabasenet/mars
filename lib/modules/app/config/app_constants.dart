@@ -60,7 +60,7 @@ class AppConstants {
 
   static const fiatPrecision = 2;
   static const dposAddress =
-      '20m0dewv8fb58kp92g0xr2cmh0kxpk5aghthf953sv0x23651rd7kkgng';
+      '20m07jr2smarkbab2bwatddzt56wd9sms0q2gkg2k3yhgnxby9mzrzbvc';
 
   static String get sentryDns => isBeta ? sentryDnsBeta : sentryDnsProd;
 
