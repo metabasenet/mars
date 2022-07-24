@@ -3,7 +3,7 @@ part of wallet_domain_module;
 class WalletPathUtils {
   static final pathConfigs = [
     WalletPathConfig(
-      name: 'Orange',
+      name: 'Apple',
       logo: 'assets/images/wallet_mars.png',
     ),
     WalletPathConfig(
