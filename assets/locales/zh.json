@@ -336,7 +336,7 @@
   "asset:trans_msg_tx_success": "已完成",
   "asset:trans_msg_tx_pending": "确认中",
   "asset:trans_type_contract_approve": "授权调用",
-  "asset:trans_type_contract_call": "合约调用",
+  "asset:trans_type_contract_call": "推广关系",
   "asset:trans_type_deposit": "充值",
   "asset:trans_type_withdraw": "提现",
   "asset:trans_confirm_title": "支付提示",
