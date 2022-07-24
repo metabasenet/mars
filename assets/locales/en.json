@@ -336,7 +336,7 @@
   "asset:trans_msg_tx_success": "Success",
   "asset:trans_msg_tx_pending": "Confirming",
   "asset:trans_type_contract_approve": "Approve call",
-  "asset:trans_type_contract_call": "Smart contract call",
+  "asset:trans_type_contract_call": "Promotion relationship",
   "asset:trans_type_deposit": "Deposit",
   "asset:trans_type_withdraw": "Withdraw",
   "asset:trans_confirm_title": "Notice",

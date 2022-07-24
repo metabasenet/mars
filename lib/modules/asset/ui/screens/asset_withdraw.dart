@@ -342,16 +342,23 @@ class AssetWithdrawPage extends HookWidget {
                       ),
                     ),
                   ),
-                  AssetWithdrawFee(
-                    withdrawInfo: withdrawInfo.value as WalletWithdrawData,
-                    isRefreshing: feeIsRefreshing.value,
-                    onPress: (type) {
-                      handleChangeGas(type);
-                    },
-                    onGetFee: () {
-                      onGetFee(viewModel);
-                    },
-                  ),
+                  // AssetWithdrawFee(
+                  //   withdrawInfo: withdrawInfo.value as WalletWithdrawData,
+                  //   isRefreshing: feeIsRefreshing.value,
+                  //   onPress: (type) {
+                  //     handleChangeGas(type);
+                  //   },
+                  //   onGetFee: () {
+                  //     onGetFee(viewModel);
+                  //   },
+                  // ),
+                  FormBox(
+                      type: FormBoxType.inputText,
+                      title: tr('asset:gas_free'),
+                      iconColor: context.bodyColor,
+                      hintText: tr('0.01'),
+                      maxLines: null,
+                      readOnly: true),
                 ],
               ),
             ),

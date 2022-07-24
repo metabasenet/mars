@@ -295,11 +295,18 @@ class InvitationCreatePage extends HookWidget {
                         validator: RequiredValidator(
                           errorText: tr('asset:withdraw_req_amount'),
                         ),
+                        // inputFormatters: [
+                        //   DecimalTextInputFormatter(
+                        //     decimalRange: coinInfo.value != null
+                        //         ? coinInfo.value.chainPrecision
+                        //         : 0,
+                        //   ),
+                        // ],
                         inputFormatters: [
                           DecimalTextInputFormatter(
-                            decimalRange: coinInfo.value != null
-                                ? coinInfo.value.chainPrecision
-                                : 0,
+                            //decimalRange:
+                            //amount.text == '' ? 8 : int.tryParse(amount.text),
+                            decimalRange: 6,
                           ),
                         ],
                         onPressIcon: () {
