@@ -19,6 +19,7 @@ import 'package:mars/modules/app/app.dart';
 import 'package:mars/modules/asset/domain/asset.dart';
 import 'package:mars/modules/common/domain/common.dart';
 import 'package:mars/utils/utils.dart';
+import 'package:mars/crypto/mnt.dart';
 
 part 'invest.g.dart';
 part 'logic/invest_home_vm.dart';
