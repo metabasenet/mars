@@ -293,6 +293,7 @@
   "asset:withdraw_msg_success": "提票成功，等待网络确认",
   "asset:withdraw_msg_attention": "请注意核对地址，资产转出后将无法找回。",
   "asset:withdraw_msg_failed": "发起交易失败",
+  "asset:withdraw_msg_error_failed": "提票交易失败",
   "asset:withdraw_msg_error_balance": "余额不足",
   "asset:withdraw_msg_error_fee": "矿工费余额不足",
   "asset:withdraw_msg_error_amount": "转账金额不正确",
