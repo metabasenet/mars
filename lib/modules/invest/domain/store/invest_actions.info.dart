@@ -18,9 +18,18 @@ class InvestActionGetProfitRecordList extends _BaseAction {
         .where((element) => element.chain == AppConstants.mnt_chain)
         .first;
 
+    //get nodeAddress
+    final ret = getVote(
+      coin.address,
+      coin.address,
+      0,
+    );
+
+    final nodeAddress = ret['address'].toString();
+
     final result = await InvestRepository().getProfitRecordList(
       fork: activeMint?.forkId ?? '',
-      address: coin.address,
+      address: nodeAddress,
       take: take,
       skip: skip,
     );
