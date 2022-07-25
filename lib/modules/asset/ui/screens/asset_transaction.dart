@@ -78,7 +78,8 @@ class AssetTransactionPage extends HookWidget {
       },
       {
         'title': tr('asset:trans_lbl_fee'),
-        'value': '${info.fee} ${feeCoinName.value}',
+        // 'value': '${info.fee} ${feeCoinName.value}',
+        'value': '0.01',
       },
     ];
 
