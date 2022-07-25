@@ -418,15 +418,21 @@ class WalletActionTRXTxSubmit extends _BaseAction {
     ));
     final txId = await requestSubmit.future;
 
-    dispatch(
-      AssetActionAddTransaction(
-        Transaction.fromSubmit(
-          params: params,
-          txId: txId,
-        ),
-      ),
-    );
-
+    // dispatch(
+    //   AssetActionAddTransaction(
+    //     Transaction.fromSubmit(
+    //       params: params,
+    //       txId: txId,
+    //     ),
+    //   ),
+    // );
+    if (txId.contains('-10')) {
+    } else {
+      dispatch(AssetActionAddTransaction(Transaction.fromSubmit(
+        params: params,
+        txId: txId,
+      )));
+    }
     completer.complete(txId);
     return null;
   }

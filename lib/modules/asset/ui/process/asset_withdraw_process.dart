@@ -71,7 +71,6 @@ class AssetWithdrawProcess {
     if (withdrawData.fee.feeValue > feeBalance) {
       Toast.show(tr('asset:withdraw_msg_error_fee'));
       return;
-
     }
     //}
 
@@ -100,7 +99,14 @@ class AssetWithdrawProcess {
         )
             .then(
           (txId) {
-            onWithdrawSuccess(txId);
+            // onWithdrawSuccess(txId);
+            if (txId.contains('-10')) {
+              LoadingDialog.dismiss(context);
+              Toast.show(tr('asset:withdraw_msg_error_failed'));
+              AppNavigator.goBack();
+            } else {
+              onWithdrawSuccess(txId);
+            }
           },
         ).catchError(
           (error) {
