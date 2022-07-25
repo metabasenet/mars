@@ -293,6 +293,7 @@
   "asset:withdraw_msg_success": "Ticket collection succeeded, waiting for network confirmation",
   "asset:withdraw_msg_attention": "Please check the address, the assets can‘t be retrieved after the transfer.",
   "asset:withdraw_msg_failed": "Failed to initiate transaction",
+  "asset:withdraw_msg_error_failed": "Ticket collection transaction failed",
   "asset:withdraw_msg_error_balance": "Insufficient balance",
   "asset:withdraw_msg_error_fee": "Insufficient miner fee balance",
   "asset:withdraw_msg_error_amount": "Incorrect transfer amount",
