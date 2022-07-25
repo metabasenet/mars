@@ -17,13 +17,28 @@ class InvestActionGetProfitRecordList extends _BaseAction {
     final coin = store.state.walletState.activeWallet!.addresses
         .where((element) => element.chain == AppConstants.mnt_chain)
         .first;
+    //get nodeAddress
+    final ret = getVote(
+      coin.address,
+      coin.address,
+      0,
+    );
+
+    final nodeAddress = ret['address'].toString();
 
     final result = await InvestRepository().getProfitRecordList(
       fork: activeMint?.forkId ?? '',
-      address: coin.address,
+      address: nodeAddress,
       take: take,
       skip: skip,
     );
+
+    // final result = await InvestRepository().getProfitRecordList(
+    //   fork: activeMint?.forkId ?? '',
+    //   address: coin.address,
+    //   take: take,
+    //   skip: skip,
+    // );
     final data = deserializeListOf<ProfitRecordItem>(result);
     return state.rebuild(
       (a) => a.investState.profitRecordList.replace(data),
